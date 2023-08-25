@@ -19,7 +19,7 @@ RenderCard.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-const Home = () => {
+const Homes = () => {
   const [loading, setLoading] = useState(false);
   const [allPost, setAllPost] = useState(null);
   const [searchText, setSearchText] = useState("something");
@@ -71,4 +71,4 @@ const Home = () => {
     </>
   );
 };
-export default Home;
+export default Homes;
