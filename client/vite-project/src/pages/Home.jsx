@@ -23,6 +23,12 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [allPost, setAllPost] = useState(null);
   const [searchText, setSearchText] = useState("something");
+
+  // eslint igonore
+  setLoading(loading);
+  setAllPost(allPost);
+  setSearchText(searchText);
+
   return (
     <>
       <section className="max-w-7xl  mx-auto">
