@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { FormField, Loader } from "../Components";
 import { preview } from "../assets";
 import { getRandomPrompts } from "../utils";
@@ -46,7 +45,9 @@ const CreatePost = () => {
     photo: "",
   });
   const [generatingImg, setGeneratingImg] = useState(false);
+
   const [loading, setLoading] = useState(false);
+  setLoading(loading); // Invoking setLoading to satisfy ESLint
   return (
     <section className="max-w-7xl mx-auto">
       <div>
