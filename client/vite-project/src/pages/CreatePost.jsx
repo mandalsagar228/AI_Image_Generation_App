@@ -39,7 +39,7 @@ const CreatePost = () => {
     const randomPrompt = getRandomPrompts(form.prompts);
     setForm({ ...form, prompts: randomPrompt });
   };
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [form, setForm] = useState({
     name: "",
     prompts: "",
